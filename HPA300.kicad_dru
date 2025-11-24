@@ -1,0 +1,7 @@
+(version 1)
+
+(rule "HighClearance: 2mm from non-pads"
+  (constraint clearance (min 2mm))
+  #(condition "A.hasNetclass('touch') && A.Type != 'Pad' && B.Type == 'Zone'")
+  (condition "A.Width == 0.13mm && B.Type != 'Track' && A.Type != 'Pad' && B.Type == 'Zone'")
+)

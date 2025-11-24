@@ -1,0 +1,255 @@
+(footprint "HPA300 Key"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 6.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "568c2ed8-1ef3-474a-be9b-1f3546f5ab5a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "HPA300 Key"
+		(at 12 -6.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0d45b917-6895-4b5e-a7c0-1cefe2e849c6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e057e6ed-856f-4aab-9f9e-85d7f5776aad")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d8ddfa21-10ab-4006-9e0d-36502973b769")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_arc
+		(start -0.35 -10.6)
+		(mid 0 -10.95)
+		(end 0.35 -10.6)
+		(stroke
+			(width 0.6)
+			(type solid)
+		)
+		(layer "F.Mask")
+		(uuid "e08e9e9e-80c9-4b00-b991-387a04703e88")
+	)
+	(fp_arc
+		(start 0.35 10.61)
+		(mid 0 10.96)
+		(end -0.35 10.61)
+		(stroke
+			(width 0.6)
+			(type solid)
+		)
+		(layer "F.Mask")
+		(uuid "fc61881e-70b3-4cb3-a702-e26a7b1f7874")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 1.1 0.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill yes)
+		(layer "B.Mask")
+		(uuid "8515ea7f-db10-4c7b-8dd7-62e511c63a26")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 5 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "95ff3296-7d77-4ccd-881b-e48f4f1304a2")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 8 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "173b6c37-f27f-4873-b98a-a1ebbf4a0d61")
+	)
+	(pad "1" thru_hole custom
+		(at 0 0)
+		(size 2.5 2.5)
+		(drill 0.78)
+		(layers "*.Cu")
+		(remove_unused_layers no)
+		(options
+			(clearance outline)
+			(anchor circle)
+		)
+		(primitives
+			(gr_line
+				(start 0 0)
+				(end 0 -10.6)
+				(width 0.5)
+			)
+			(gr_line
+				(start 0 0)
+				(end 0 10.6)
+				(width 0.5)
+			)
+		)
+		(uuid "6af28944-b232-4b7d-b08e-4d86f42d1bd4")
+	)
+	(pad "2" thru_hole custom
+		(at 0 -11.72 180)
+		(size 1.32 1.32)
+		(drill 0.5)
+		(layers "*.Cu")
+		(remove_unused_layers no)
+		(zone_connect 2)
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_arc
+				(start 0.56 -1.12)
+				(mid 0 -0.56)
+				(end -0.56 -1.12)
+				(width 0.2)
+			)
+			(gr_poly
+				(pts
+					(xy 0.66 -0.66) (xy 0.66 -1.13) (xy 0.46 -0.66)
+				)
+				(width 0)
+				(fill yes)
+			)
+			(gr_poly
+				(pts
+					(xy -0.66 -0.66) (xy -0.66 -1.11) (xy -0.46 -0.66)
+				)
+				(width 0)
+				(fill yes)
+			)
+		)
+		(uuid "a670ac43-dc01-4054-9444-dc2bddd54af3")
+	)
+	(pad "2" thru_hole custom
+		(at 0 11.72)
+		(size 1.32 1.32)
+		(drill 0.5)
+		(layers "*.Cu")
+		(remove_unused_layers no)
+		(zone_connect 2)
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_arc
+				(start 0.56 -1.12)
+				(mid 0 -0.56)
+				(end -0.56 -1.12)
+				(width 0.2)
+			)
+			(gr_poly
+				(pts
+					(xy 0.66 -0.66) (xy 0.66 -1.13) (xy 0.46 -0.66)
+				)
+				(width 0)
+				(fill yes)
+			)
+			(gr_poly
+				(pts
+					(xy -0.66 -0.66) (xy -0.66 -1.11) (xy -0.46 -0.66)
+				)
+				(width 0)
+				(fill yes)
+			)
+		)
+		(uuid "d419b44f-4d99-46ed-9c9f-b3a8ab22b146")
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layers "F.Cu" "B.Cu")
+		(uuid "05d78c53-624b-4aca-bd9c-260911b0a72f")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(keepout
+			(tracks allowed)
+			(vias allowed)
+			(pads allowed)
+			(copperpour not_allowed)
+			(footprints not_allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(arc
+					(start -11 0)
+					(mid 11 0)
+					(end -11 0)
+				)
+			)
+		)
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/lib/lib_3d/Touch Spring v5.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
