@@ -1,0 +1,68 @@
+name: Hardware release
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - "v*"
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    runs-on: windows-latest
+
+    steps:
+      - name: Check out design
+        uses: actions/checkout@v4
+
+      - name: Choose artifact version
+        id: version
+        shell: pwsh
+        run: |
+          if ($env:GITHUB_REF_TYPE -eq 'tag') {
+            "value=$env:GITHUB_REF_NAME" >> $env:GITHUB_OUTPUT
+          } else {
+            "value=ci-$($env:GITHUB_SHA.Substring(0, 7))" >> $env:GITHUB_OUTPUT
+          }
+
+      - name: Package manufacturing outputs
+        shell: pwsh
+        run: ./scripts/package-release.ps1 -Version '${{ steps.version.outputs.value }}'
+
+      - name: Retain CI artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: HPA300-${{ steps.version.outputs.value }}-release-assets
+          path: dist/*
+          if-no-files-found: error
+
+  release:
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: package
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Download packaged assets
+        uses: actions/download-artifact@v4
+        with:
+          pattern: HPA300-*-release-assets
+          path: dist
+          merge-multiple: true
+
+      - name: Create tagged GitHub release
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $assets = Get-ChildItem -LiteralPath dist -File |
+            ForEach-Object { $_.FullName }
+          gh release create '${{ github.ref_name }}' $assets `
+            --verify-tag `
+            --generate-notes `
+            --title "HPA300 hardware ${{ github.ref_name }}"

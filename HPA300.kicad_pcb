@@ -7,6 +7,16 @@
 		(legacy_teardrops no)
 	)
 	(paper "A4")
+	(title_block
+		(title "HPA300 Replacement Controller")
+		(date "11/12/2025")
+		(rev "A")
+		(company "PJM")
+		(comment 1 "Open hardware — CERN-OHL-W-2.0")
+		(comment 2 "github.com/patmont/HPA300-hardware")
+		(comment 3 "Independent project; not affiliated with Honeywell")
+		(comment 4 "Designed with KiCad 9")
+	)
 	(layers
 		(0 "F.Cu" signal)
 		(2 "B.Cu" signal)
@@ -1213,7 +1223,7 @@
 					(fill yes)
 				)
 			)
-			(uuid "cda926c4-2e72-4bb7-9e05-2c36a48ac248")
+			(uuid "cd931322-ea21-445e-85bb-fbdf0e19db35")
 		)
 		(zone
 			(net 0)
@@ -1479,7 +1489,7 @@
 					(fill yes)
 				)
 			)
-			(uuid "985d42ee-d8a0-40d0-80b0-178ba2e3a839")
+			(uuid "75da694a-4e5d-4e5b-9f36-ca3ba91215c4")
 		)
 		(zone
 			(net 0)
@@ -3146,7 +3156,7 @@
 					(fill yes)
 				)
 			)
-			(uuid "7172e8a9-e362-4900-befd-7e4ec36894d4")
+			(uuid "009fc97a-f5e2-4d3c-9bdd-6199950acafe")
 		)
 		(zone
 			(net 0)
@@ -3810,7 +3820,7 @@
 					(fill yes)
 				)
 			)
-			(uuid "d1f2b544-7b11-4e21-8cd4-49a6ff66195b")
+			(uuid "ecfdacb7-12e5-414f-8da0-8117fe7ce8f3")
 		)
 		(zone
 			(net 0)
@@ -4076,7 +4086,7 @@
 					(fill yes)
 				)
 			)
-			(uuid "e9699cff-747d-420d-a017-a83dc2df2808")
+			(uuid "f56bae26-a0c8-49e6-a8df-f6aa3849cfcb")
 		)
 		(zone
 			(net 0)
@@ -5140,7 +5150,7 @@
 					(fill yes)
 				)
 			)
-			(uuid "2c0e3622-7a31-4128-8d69-934420a84b89")
+			(uuid "4c246d6d-216a-42ec-9245-7e966d88efc1")
 		)
 		(zone
 			(net 0)
@@ -12351,7 +12361,7 @@
 			(pinfunction "GND")
 			(pintype "passive")
 			(solder_mask_margin 0.102)
-			(uuid "1da46f53-17b7-4348-a5a6-2af2b8588b60")
+			(uuid "881b10e2-3297-49f4-908d-5b9f1962a685")
 		)
 		(pad "41" smd rect
 			(at -2.9 -1.06)
@@ -12361,7 +12371,7 @@
 			(pinfunction "GND")
 			(pintype "passive")
 			(solder_mask_margin 0.102)
-			(uuid "1da46f53-17b7-4348-a5a6-2af2b8588b60")
+			(uuid "d2f243d9-6f22-4d65-974b-ce65fc1f60b9")
 		)
 		(pad "41" smd rect
 			(at -1.5 -3.86)
@@ -12371,7 +12381,7 @@
 			(pinfunction "GND")
 			(pintype "passive")
 			(solder_mask_margin 0.102)
-			(uuid "1da46f53-17b7-4348-a5a6-2af2b8588b60")
+			(uuid "4e97fca0-1f73-4742-9c0d-4a4759e3ba8c")
 		)
 		(pad "41" smd rect
 			(at -1.5 -2.46)
@@ -12381,7 +12391,7 @@
 			(pinfunction "GND")
 			(pintype "passive")
 			(solder_mask_margin 0.102)
-			(uuid "1da46f53-17b7-4348-a5a6-2af2b8588b60")
+			(uuid "b972529e-ac31-412d-b625-c10a47ccf07a")
 		)
 		(pad "41" smd rect
 			(at -1.5 -1.06)
@@ -12391,7 +12401,7 @@
 			(pinfunction "GND")
 			(pintype "passive")
 			(solder_mask_margin 0.102)
-			(uuid "1da46f53-17b7-4348-a5a6-2af2b8588b60")
+			(uuid "e32618dc-0481-48dc-964d-2903b8c60194")
 		)
 		(pad "41" smd rect
 			(at -0.1 -3.86)
@@ -12401,7 +12411,7 @@
 			(pinfunction "GND")
 			(pintype "passive")
 			(solder_mask_margin 0.102)
-			(uuid "1da46f53-17b7-4348-a5a6-2af2b8588b60")
+			(uuid "1b9ca29a-2288-4ccb-941a-0e503c22456f")
 		)
 		(pad "41" smd rect
 			(at -0.1 -2.46)
@@ -12411,7 +12421,7 @@
 			(pinfunction "GND")
 			(pintype "passive")
 			(solder_mask_margin 0.102)
-			(uuid "1da46f53-17b7-4348-a5a6-2af2b8588b60")
+			(uuid "5303774e-7078-4c95-801a-25ff28d5eb3b")
 		)
 		(pad "41" smd rect
 			(at -0.1 -1.06)
@@ -12421,7 +12431,7 @@
 			(pinfunction "GND")
 			(pintype "passive")
 			(solder_mask_margin 0.102)
-			(uuid "1da46f53-17b7-4348-a5a6-2af2b8588b60")
+			(uuid "8a55aa19-2577-4fe1-b8ea-7b66eb5d16b2")
 		)
 		(pad "42" thru_hole circle
 			(at -2.9 -3.16)
@@ -12443,7 +12453,7 @@
 			(net 2 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
-			(uuid "971d701c-44c9-43ed-8de3-cb146c4c14fc")
+			(uuid "9e4e878f-ad79-44a2-829e-46e0d0425762")
 		)
 		(pad "42" thru_hole circle
 			(at -2.2 -3.86)
@@ -12454,7 +12464,7 @@
 			(net 2 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
-			(uuid "971d701c-44c9-43ed-8de3-cb146c4c14fc")
+			(uuid "7d4d162c-89bd-4144-8c95-0dff528c72b0")
 		)
 		(pad "42" thru_hole circle
 			(at -2.2 -2.46)
@@ -12465,7 +12475,7 @@
 			(net 2 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
-			(uuid "971d701c-44c9-43ed-8de3-cb146c4c14fc")
+			(uuid "a9f7f7cd-a0ed-425e-91b0-5b8edf7ac6ef")
 		)
 		(pad "42" thru_hole circle
 			(at -2.2 -1.06)
@@ -12476,7 +12486,7 @@
 			(net 2 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
-			(uuid "971d701c-44c9-43ed-8de3-cb146c4c14fc")
+			(uuid "bec75f6a-59f8-4649-9472-295fc40df94c")
 		)
 		(pad "42" thru_hole circle
 			(at -1.5 -3.16)
@@ -12487,7 +12497,7 @@
 			(net 2 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
-			(uuid "971d701c-44c9-43ed-8de3-cb146c4c14fc")
+			(uuid "0102b204-1a83-4b68-b93b-cb48ee5f75c0")
 		)
 		(pad "42" thru_hole circle
 			(at -1.5 -1.76)
@@ -12498,7 +12508,7 @@
 			(net 2 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
-			(uuid "971d701c-44c9-43ed-8de3-cb146c4c14fc")
+			(uuid "082627a8-bc7d-41db-85ee-3ebf9786bd3a")
 		)
 		(pad "42" thru_hole circle
 			(at -0.8 -3.86)
@@ -12509,7 +12519,7 @@
 			(net 2 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
-			(uuid "971d701c-44c9-43ed-8de3-cb146c4c14fc")
+			(uuid "d8b0e417-d925-4ac0-bd1e-101a67808ad7")
 		)
 		(pad "42" thru_hole circle
 			(at -0.8 -2.46)
@@ -12520,7 +12530,7 @@
 			(net 2 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
-			(uuid "971d701c-44c9-43ed-8de3-cb146c4c14fc")
+			(uuid "173660eb-3e3b-423b-a764-a35f0c7045e8")
 		)
 		(pad "42" thru_hole circle
 			(at -0.8 -1.06)
@@ -12531,7 +12541,7 @@
 			(net 2 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
-			(uuid "971d701c-44c9-43ed-8de3-cb146c4c14fc")
+			(uuid "b9fa0c06-cbde-4d2f-a02c-a0fbd6751fa9")
 		)
 		(pad "42" thru_hole circle
 			(at -0.1 -3.16)
@@ -12542,7 +12552,7 @@
 			(net 2 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
-			(uuid "971d701c-44c9-43ed-8de3-cb146c4c14fc")
+			(uuid "c168de7a-c876-49d3-acd8-d496e9dec8bb")
 		)
 		(pad "42" thru_hole circle
 			(at -0.1 -1.76)
@@ -12553,7 +12563,7 @@
 			(net 2 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
-			(uuid "971d701c-44c9-43ed-8de3-cb146c4c14fc")
+			(uuid "562821a3-7717-4a36-b16d-4d1ea800ea6f")
 		)
 		(zone
 			(net 0)

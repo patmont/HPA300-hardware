@@ -4,6 +4,15 @@
 	(generator_version "9.0")
 	(uuid "d912c5ef-17f7-44f2-84b3-dabc56ab9531")
 	(paper "A4")
+	(title_block
+		(title "HPA300 Replacement Controller")
+		(date "11/12/2025")
+		(rev "A")
+		(company "PJM")
+		(comment 1 "Open hardware — CERN-OHL-W-2.0")
+		(comment 2 "github.com/patmont/HPA300-hardware")
+		(comment 3 "Independent project; not affiliated with Honeywell")
+	)
 	(lib_symbols
 		(symbol "Device:LED"
 			(pin_numbers

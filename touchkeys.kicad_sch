@@ -4,6 +4,15 @@
 	(generator_version "9.0")
 	(uuid "1304d177-c9d4-4a4c-8aad-843c8cbe7b40")
 	(paper "A4")
+	(title_block
+		(title "HPA300 Replacement Controller")
+		(date "11/12/2025")
+		(rev "A")
+		(company "PJM")
+		(comment 1 "Open hardware — CERN-OHL-W-2.0")
+		(comment 2 "github.com/patmont/HPA300-hardware")
+		(comment 3 "Independent project; not affiliated with Honeywell")
+	)
 	(lib_symbols
 		(symbol "0_switch:HPA300_TOUCH_KEY"
 			(exclude_from_sim no)

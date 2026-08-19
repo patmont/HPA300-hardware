@@ -1,2 +1,24 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Keep design and generated manufacturing text deterministic across platforms.
+*.kicad_dru text eol=lf
+*.kicad_mod text eol=lf
+*.kicad_pcb text eol=lf
+*.kicad_pro text eol=lf
+*.kicad_sch text eol=lf
+*.kicad_sym text eol=lf
+*.csv text eol=lf
+*.drl text eol=lf
+*.gb? text eol=lf
+*.gm? text eol=lf
+*.gt? text eol=lf
+*.md text eol=lf
+*.ps1 text eol=lf
+*.svg text eol=lf
+*.yml text eol=lf
+
+# Do not text-normalize or diff large rendered/model assets.
+*.pdf binary
+*.png binary
+*.step binary
