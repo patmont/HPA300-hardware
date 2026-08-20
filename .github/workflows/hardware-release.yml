@@ -46,6 +46,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      actions: read
 
     steps:
       - name: Download packaged assets
@@ -55,14 +56,33 @@ jobs:
           path: dist
           merge-multiple: true
 
+      - name: Inspect packaged assets
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          Get-ChildItem -LiteralPath dist -File |
+            Select-Object Name, Length
+
       - name: Create tagged GitHub release
         shell: pwsh
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          $assets = Get-ChildItem -LiteralPath dist -File |
-            ForEach-Object { $_.FullName }
-          gh release create '${{ github.ref_name }}' $assets `
+          $ErrorActionPreference = 'Stop'
+          gh release create '${{ github.ref_name }}' `
             --verify-tag `
             --generate-notes `
             --title "HPA300 hardware ${{ github.ref_name }}"
+
+      - name: Upload release assets
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $assets = Get-ChildItem -LiteralPath dist -File |
+            ForEach-Object { $_.FullName }
+          if ($assets.Count -ne 5) {
+            throw "Expected five release assets, found $($assets.Count)."
+          }
+          gh release upload '${{ github.ref_name }}' @assets --clobber
