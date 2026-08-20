@@ -67,7 +67,7 @@ and release procedure.
 To build the same release assets locally from PowerShell:
 
 ```powershell
-./scripts/package-release.ps1 -Version v1.0.0
+./scripts/package-release.ps1 -Version v0.1.0
 ```
 
 The packages are written to `dist/`, which is intentionally ignored by Git.

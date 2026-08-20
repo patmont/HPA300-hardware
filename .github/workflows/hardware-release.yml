@@ -49,6 +49,11 @@ jobs:
       actions: read
 
     steps:
+      - name: Check out tagged commit
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
       - name: Download packaged assets
         uses: actions/download-artifact@v4
         with:
